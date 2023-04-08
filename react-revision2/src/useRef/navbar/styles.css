@@ -1,0 +1,54 @@
+nav{
+    position: relative;
+}
+li {
+    list-style: none;
+}
+
+.icon {
+    display: none;
+}
+
+ul{
+    height: 100px;
+}
+
+.ball{
+    width:100px;
+    height:100px;
+    background:red;
+    border-radius:50%;
+    position: absolute;
+    filter:blur(20px)
+}
+
+@media only screen and (max-width:600px) {
+    .icon {
+        display: block;
+        position: absolute;
+        top:50px;
+        right:40px
+    }
+
+    nav {
+        padding: 0 !important;
+        
+    }
+
+    .hide{
+        /* display: none !important; */
+        height: 0;
+        overflow: hidden;
+    }
+    ul{
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        transition: all 0.6s;
+        background-color: red;
+    }
+    ul .show {
+        display: flex;
+    }
+    
+}

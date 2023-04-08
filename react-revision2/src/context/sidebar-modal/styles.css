@@ -1,0 +1,28 @@
+.container{
+    height: 200px;
+    position: absolute !important;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.cont{
+    height: 100vh;
+    width: 20vw;
+    position:absolute;
+    top:0;
+    transition: all 0.8s;
+}
+
+.show{
+    display: block;
+}
+.hide{
+    display:none
+}
+.slide-in{
+    transform: translateX(100%);
+}
+.slide-off{
+    transform: translateX(-100%);
+}
